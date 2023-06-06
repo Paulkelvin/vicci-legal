@@ -174,12 +174,12 @@ nav {
   height: 88vh;
 }
 
-svg {
+/* svg {
   position: absolute;
   bottom: 0;
   width: 100%;
   z-index: -1;
-}
+} */
 
 .hero-left {
   display: flex;
@@ -303,7 +303,7 @@ h1 > .legal,
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     background-color: #4682b4;
-    padding-right: 1rem;
+    padding-right: 1.2rem;
   }
 
   #home {
@@ -359,7 +359,87 @@ h1 > .legal,
     display: none;
   }
 
-  svg {
+  /* svg {
     display: none;
+  } */
+
+  .testimonial-section {
+    padding: 2rem;
+  }
+
+  .testimonial-heading {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .testimonial-sub-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .testimonial {
+    margin-bottom: 5rem;
+  }
+
+  .testimonial-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .testimonial-quote {
+    font-size: 1.1rem;
+    position: relative;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    color: #525254;
+  }
+
+  .feather-chevrons-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    color: #ddd;
+  }
+
+  .feather-chevrons-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2rem;
+    color: #ddd;
+  }
+
+  .testimonial-client-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #525254;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .testimonial-client-profession {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0;
+    color: #525254;
+    padding-left: 2rem;
   }
 }
