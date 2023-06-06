@@ -413,7 +413,7 @@ h1 > .legal,
     position: absolute;
     top: 0;
     left: 0;
-    width: 2rem;
+    width: 2.5rem;
     color: #ddd;
   }
 
@@ -421,7 +421,7 @@ h1 > .legal,
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 2rem;
+    width: 2.5rem;
     color: #ddd;
   }
 
