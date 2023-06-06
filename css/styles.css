@@ -15,6 +15,11 @@ h6 {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.custom-container {
+  overflow-x: hidden;
 }
 
 body {
@@ -193,7 +198,6 @@ svg {
 }
 
 .hero-image {
-  /* width: 100%; */
   height: 80%;
   object-fit: contain;
 }
@@ -202,6 +206,7 @@ svg {
   font-size: 2.5rem;
   color: #333333;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 h1 > .legal,
@@ -252,6 +257,7 @@ h1 > .legal,
     z-index: 100;
     width: 100%;
     height: 12vh;
+    margin-right: 0.7rem;
   }
 
   .hamburger-menu {
@@ -267,6 +273,7 @@ h1 > .legal,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
     gap: 3rem;
     position: fixed;
     top: 0;
@@ -282,7 +289,16 @@ h1 > .legal,
   }
 
   .nav-links.show {
+    display: flex;
+    margin-left: -0.7rem;
+
+    align-items: center;
+    justify-content: center;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   #home {
