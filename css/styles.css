@@ -244,6 +244,10 @@ h1 > .legal,
   padding-bottom: 0 !important;
 }
 
+.testimonial-section {
+  padding: 0 2rem;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {
@@ -375,6 +379,7 @@ h1 > .legal,
   .testimonial-sub-heading {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 4rem;
   }
 
   .testimonial {
@@ -401,38 +406,47 @@ h1 > .legal,
   }
 
   .testimonial-quote {
-    font-size: 1.1rem;
     position: relative;
-    padding: 2rem;
-    padding-bottom: 1rem;
+    padding: 2rem 0;
     text-align: left;
-    color: #525254;
   }
 
-  .feather-chevrons-left {
+  .quote {
+    position: relative;
+  }
+
+  .quote-open {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2rem;
     color: #ddd;
+    fill: #dadadc;
+    opacity: 0.54;
+    z-index: 10;
   }
 
-  .feather-chevrons-right {
+  .quote-close {
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     right: 0;
-    width: 2rem;
     color: #ddd;
+    fill: #dadadc;
+    opacity: 0.54;
+  }
+
+  svg {
+    position: absolute;
+    width: 25px;
+    height: 32px;
   }
 
   .testimonial-client-name {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0;
     color: #525254;
     text-align: left;
-    padding-left: 2rem;
   }
 
   .testimonial-client-profession {
@@ -440,6 +454,5 @@ h1 > .legal,
     text-align: left;
     margin-bottom: 0;
     color: #525254;
-    padding-left: 2rem;
   }
 }
