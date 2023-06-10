@@ -369,13 +369,27 @@ h1 > .legal,
 
   .testimonial-section {
     padding: 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
   }
 
   .testimonial-heading {
+    position: relative;
+    display: inline-block;
     text-align: center;
     font-size: 1.2rem;
     color: #333333;
   }
+
+  /* .testimonial-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: 3px;
+    background-color: #4682b4;
+  } */
 
   .testimonial-sub-heading {
     text-align: center;
@@ -384,7 +398,7 @@ h1 > .legal,
   }
 
   .testimonial {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
   .testimonial-image-container {
@@ -538,5 +552,56 @@ h1 > .legal,
 
   .detail-cta:active {
     transform: scale(1.1);
+  }
+
+  /* faq section */
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
+    background: linear-gradient(to bottom, #f5f5f5, #f9f9f9, #ffffff);
+  }
+
+  .faq-header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .accordion-button.bg-light {
+    background-color: #e3f2fd !important;
+  }
+
+  .fa-question-circle {
+    color: #4682b4;
+  }
+
+  .faq-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .faq-title {
+    font-size: 1.6rem;
+  }
+
+  .faq-subtitle {
+    color: #4682b4;
+  }
+
+  .faq-subtitle > a {
+    color: #4682b4;
+  }
+
+  .accordion-button.text-muted {
+    color: #333333 !important;
+  }
+
+  .accordion-item {
+    margin-bottom: 0.2rem;
   }
 }
