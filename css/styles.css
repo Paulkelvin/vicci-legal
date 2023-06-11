@@ -117,6 +117,10 @@ nav {
   display: block;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
 }
 
 .hamburger-menu {
@@ -291,14 +295,27 @@ nav {
     z-index: 999;
   }
 
+  .hamburger-menu-container {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    right: 2%;
+    width: 3rem;
+    z-index: 1000;
+  }
+
   .hamburger-menu {
     display: flex;
-    position: fixed;
-    top: 3.8%;
-    right: 5%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #e2e7f5;
-
     z-index: 1000;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
   }
 
   .nav-links {
@@ -590,16 +607,8 @@ nav {
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
-    /* border-top: 2px solid #fff; */
-    background: linear-gradient(
-      to bottom,
-      #ffffff,
-      #f9ffef,
-      #fafffe,
-      #fffbf7,
-      #fffaf4,
-      #fff4f7
-    );
+    background: linear-gradient(to bottom, #ffffff, #f4f8f9);
+    /* background-color: #f4f8f9; */
   }
 
   .faq-header {
@@ -632,6 +641,16 @@ nav {
   }
 
   .faq-subtitle > a {
+    color: #4682b4;
+  }
+
+  .accordion-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .accordion-button i {
+    margin-right: 1rem;
     color: #4682b4;
   }
 
