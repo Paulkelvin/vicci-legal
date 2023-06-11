@@ -60,7 +60,6 @@ nav {
   text-decoration: none;
   color: #e2e7f5;
   font-size: 1rem;
-  border-top: 1px solid #fff;
 }
 
 .nav-links a:hover {
@@ -168,11 +167,20 @@ nav {
 
 .hero-section {
   position: relative;
-  /* top: 12vh; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 88vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/assets/pexels-george-milton-7015153.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* svg {
@@ -207,19 +215,24 @@ nav {
 }
 
 .hero-left > h1 {
+  color: #f5f5f5;
   font-size: 2.5rem;
   color: #333333;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
-h1 > .legal,
+/* h1 > .legal,
 .property {
   color: #4682b4;
-}
+} */
 
 .hero-left > p {
-  color: #666666;
+  color: #e0e0e0;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 .cta-button {
@@ -252,6 +265,14 @@ h1 > .legal,
 /* media queries */
 
 @media (max-width: 768px) {
+  #home {
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    height: 90vh;
+    width: 100%;
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -316,18 +337,11 @@ h1 > .legal,
   .nav-links > a {
     width: 100%;
     padding: 0.5rem 4rem;
+    border-top: 1px solid #fff;
   }
 
   .get-in-touch {
     text-align: center;
-  }
-
-  #home {
-    position: absolute;
-    top: 12vh;
-    display: flex;
-    height: 100%;
-    width: 100%;
   }
 
   .hero-section {
@@ -350,6 +364,7 @@ h1 > .legal,
   }
 
   .hero-left > h1 {
+    color: #f5f5f5;
     font-size: 2rem;
     text-align: center;
   }
