@@ -42,12 +42,12 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
       // Add active class to clicked link
       this.parentElement.classList.add("active");
 
-      // Remove other sections from the DOM
-      document.querySelectorAll("section").forEach((section) => {
-        if (section !== visibleSection) {
-          section.remove();
-        }
-      });
+      // // Remove other sections from the DOM
+      // document.querySelectorAll("section").forEach((section) => {
+      //   if (section !== visibleSection) {
+      //     section.remove();
+      //   }
+      // });
     }
   });
 });
