@@ -65,7 +65,7 @@
         <form id="contact-form">
           <!-- Legal Services Form -->
           <div id="legalForm" class="form-group">
-            <h3>Legal Services Form</h3>
+            <h2>Legal Services Form</h2>
             <div class="form-group">
               <label for="first-name">First Name:</label>
               <input
@@ -97,6 +97,42 @@
               <div class="feedback" id="legal-email-feedback"></div>
             </div>
             <div class="form-group">
+              <label for="legal-phone-number">Phone Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="legal-phone-number"
+                placeholder="Phone Number"
+              />
+              <div class="feedback" id="legal-phone-number-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <div class="custom-dropdown">
+                <select class="form-control" id="subject" name="subject">
+                  <option value="">Select a subject</option>
+                  <option value="cac_registration">CAC Registration</option>
+                  <option value="change_of_name">Change of Name</option>
+                  <option value="case">Case</option>
+                </select>
+                <span class="dropdown-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="legal-existing-customer"
+                >Are you an existing customer?</label
+              >
+              <input
+                type="checkbox"
+                id="legal-existing-customer"
+                name="legal-existing-customer"
+              />
+              <label for="legal-existing-customer">Yes</label>
+            </div>
+            <div class="form-group">
               <label for="comment">Message</label>
               <textarea
                 class="form-control"
@@ -109,7 +145,7 @@
 
           <!-- Property Form -->
           <div id="propertyForm" class="form-group" style="display: none">
-            <h3>Property Form</h3>
+            <h2>Property Form</h2>
             <div class="form-group">
               <label for="first-name">First Name:</label>
               <input
@@ -153,7 +189,7 @@
 
           <!-- Others Form -->
           <div id="othersForm" class="form-group" style="display: none">
-            <h3>Others Form</h3>
+            <h2>Others Form</h2>
             <div class="form-group">
               <label for="first-name">First Name:</label>
               <input
@@ -197,6 +233,46 @@
 
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <div class="contact-information-container">
+          <h2>Contact Information</h2>
+          <div class="contact-information">
+            <div class="contact-info">
+              <div class="social-icon-container">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p>123 Main Street, City, State, Zip Code</p>
+            </div>
+            <div class="contact-info">
+              <div class="social-icon-container">
+                <i class="fas fa-phone"></i>
+              </div>
+              <p><a href="tel:+11234567890">+1 123-456-7890</a></p>
+            </div>
+            <div class="contact-info">
+              <div class="social-icon-container">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <p>
+                <a href="mailto:example@example.com">example@example.com</a>
+              </p>
+            </div>
+            <div class="map-container">
+              <!-- <h2>Our Location</h2> -->
+              <div style="width: 100%; height: 400px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9136010289917!2d3.281749574754494!3d6.6576299933371805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9733ef7dff0f%3A0xa6a80b8cce64c2c5!2s49%20Mike%20Alia%20St%2C%20Abule%20Egba%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1686743776840!5m2!1sen!2sng"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer>
