@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hamburger-menu-container">
+      <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <nav>
+      <div class="logo">Vicci limited</div>
+      <ul class="nav-links">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown-content">
+            <li><a href="services.html">Legal</a></li>
+            <li><a href="services.html">Laundry</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <a href="#legal" class="get-in-touch"
+          >Get in touch <i class="fas fa-phone"></i>
+        </a>
+      </ul>
+    </nav>
+    <section id="contact" class="main-section">
+      <div class="contact-form">
+        <h2>We’d love to hear from you.</h2>
+        <p>Please fill out our form, and we’ll be in touch with you soon.</p>
+        <div class="custom-dropdown">
+          <i class="fas fa-caret-down dropdown-icon"></i>
+          <button class="custom-dropdown-toggle" aria-expanded="false">
+            Legal services
+          </button>
+
+          <ul class="custom-dropdown-menu">
+            <li data-form-type="legal">Legal Services</li>
+            <li data-form-type="property">Property Management</li>
+            <li data-form-type="others">Others</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-page-bottom">
+        <form id="contact-form">
+          <!-- Legal Services Form -->
+          <div id="legalForm" class="form-group">
+            <h3>Legal Services Form</h3>
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="legal-first-name"
+                placeholder="First Name"
+              />
+              <div class="feedback" id="legal-first-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="legal-last-name"
+                placeholder="Last Name"
+              />
+              <div class="feedback" id="legal-last-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="legal-email"
+                placeholder="Email Address"
+              />
+              <div class="feedback" id="legal-email-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Message</label>
+              <textarea
+                class="form-control"
+                id="legal-comment"
+                placeholder="Comment"
+              ></textarea>
+              <div class="feedback" id="legal-comment-feedback"></div>
+            </div>
+          </div>
+
+          <!-- Property Form -->
+          <div id="propertyForm" class="form-group" style="display: none">
+            <h3>Property Form</h3>
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="property-first-name"
+                placeholder="First Name"
+              />
+              <div class="feedback" id="property-first-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="property-last-name"
+                placeholder="Last Name"
+              />
+              <div class="feedback" id="property-last-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="property-email"
+                placeholder="Email Address"
+              />
+              <div class="feedback" id="property-email-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea
+                class="form-control"
+                id="property-comment"
+                placeholder="Comment"
+              ></textarea>
+              <div class="feedback" id="property-comment-feedback"></div>
+            </div>
+          </div>
+
+          <!-- Others Form -->
+          <div id="othersForm" class="form-group" style="display: none">
+            <h3>Others Form</h3>
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="others-first-name"
+                placeholder="First Name"
+              />
+              <div class="feedback" id="others-first-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="others-last-name"
+                placeholder="Last Name"
+              />
+              <div class="feedback" id="others-last-name-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="others-email"
+                placeholder="Email Address"
+              />
+              <div class="feedback" id="others-email-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea
+                class="form-control"
+                id="others-comment"
+                placeholder="Comment"
+              ></textarea>
+              <div class="feedback" id="others-comment-feedback"></div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-logo-container">
+            <img src="assets/about-us-image.jpg" alt="" class="footer-logo" />
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">ABOUT VICCI SERVICES</h3>
+            <a href="" class="footer-link">Home</a>
+            <a href="" class="footer-link">Get in touch</a>
+            <a href="" class="footer-link">FAQ</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">SERVICES</h3>
+            <a href="" class="footer-link">Legal Consultancy</a>
+            <a href="" class="footer-link">Property Managment</a>
+            <a href="" class="footer-link">House Keeping</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">COMPANY</h3>
+            <a href="" class="footer-link">About Us</a>
+            <a href="" class="footer-link">Contact Us</a>
+            <a href="" class="footer-link">FAQ</a>
+          </div>
+          <div class="footer-social-media">
+            <h3 class="footer-heading">
+              Stay up-to-date with us on social media!
+            </h3>
+            <div class="social-icons-container">
+              <div class="social-icon-container">
+                <i class="fab fa-facebook-f social-icon"></i>
+              </div>
+              <div class="social-icon-container">
+                <i class="fab fa-instagram social-icon"></i>
+              </div>
+
+              <div class="social-icon-container">
+                <i class="fab fa-twitter social-icon"></i>
+              </div>
+              <div class="social-icon-container">
+                <i class="fab fa-whatsapp social-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            © 2023, Victoria Samuel. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
