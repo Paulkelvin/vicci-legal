@@ -253,13 +253,13 @@ nav {
     width: 100%;
   }
 
-  .main-section {
+  /* .main-section {
     position: absolute;
     top: 10vh;
     display: flex;
     height: 90vh;
     width: 100%;
-  }
+  } */
 
   /* .hidden {
     display: none;
@@ -841,10 +841,10 @@ nav {
     position: relative;
     background-color: #f5f5f5;
     padding: 2rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin-bottom: 2rem;
   }
 
   .form-group {
@@ -906,6 +906,70 @@ nav {
   .contact-info > p,
   a {
     color: #525254;
+  }
+
+  /* about us page */
+
+  .about-us-main {
+    position: relative;
+    top: 10vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #192136;
+    color: #fff;
+  }
+
+  .about-us-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    color: #666666;
+  }
+
+  .detail-item {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .fa-check-circle {
+    color: #4682b4;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
+  .stat-item {
+    width: 45%;
+    text-align: center;
+    border: 1px solid #192136;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+  }
+
+  .stat-icon {
+    font-size: 30px;
+    color: #424a56; /* Icon color */
+    margin-bottom: 10px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+    color: #333333; /* Number color */
+    margin-bottom: 10px;
+  }
+
+  .stat-text {
+    font-size: 18px;
+    color: #666666; /* Text color */
   }
 
   /* footer */
