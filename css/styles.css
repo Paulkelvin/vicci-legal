@@ -930,8 +930,13 @@ nav {
     color: #666666;
   }
 
+  .about-us-detail-container {
+    margin-bottom: 2rem;
+  }
+
   .about-us-details {
     position: relative;
+    text-align: center;
   }
 
   .about-us-details > h2 {
@@ -941,6 +946,7 @@ nav {
   .detail-item {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
 
   .fa-check-circle {
@@ -950,6 +956,11 @@ nav {
   .mission-vision-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-vision-container > h2 {
+    color: #4682b4;
   }
 
   .mission-title,
@@ -966,6 +977,56 @@ nav {
   .mission-image-container > img {
     width: 100%;
     height: 100%;
+  }
+
+  .manager-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+
+  .manager-intro {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+
+  .manager-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+
+  .manager-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .manager-name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+
+  .manager-quote {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+
+  .manager-about {
+    color: #666;
+    line-height: 1.6;
   }
 
   /* footer */
