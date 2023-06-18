@@ -923,9 +923,19 @@ nav {
   }
 
   .about-us-section {
+    position: relative;
+    top: 10vh;
     padding: 4rem 2rem;
     background-color: #f5f5f5;
     color: #666666;
+  }
+
+  .about-us-details {
+    position: relative;
+  }
+
+  .about-us-details > h2 {
+    color: #4682b4;
   }
 
   .detail-item {
@@ -937,39 +947,25 @@ nav {
     color: #4682b4;
   }
 
-  .stats {
+  .mission-vision-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem 0;
+    flex-direction: column;
   }
 
-  .stat-item {
-    width: 45%;
-    text-align: center;
-    border: 1px solid #192136;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #ffffff; /* White background */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+  .mission-title,
+  .vision-title {
+    color: #4682b4;
   }
 
-  .stat-icon {
-    font-size: 30px;
-    color: #424a56; /* Icon color */
-    margin-bottom: 10px;
+  .mission-image-container {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
   }
 
-  .stat-number {
-    font-size: 24px;
-    color: #333333; /* Number color */
-    margin-bottom: 10px;
-  }
-
-  .stat-text {
-    font-size: 18px;
-    color: #666666; /* Text color */
+  .mission-image-container > img {
+    width: 100%;
+    height: 100%;
   }
 
   /* footer */
