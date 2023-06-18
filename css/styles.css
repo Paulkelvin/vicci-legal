@@ -602,7 +602,7 @@ nav {
   .detail-cta {
     display: inline-block;
     color: #fff;
-    background-color: #6aa2e2;
+    background-color: #4682b4;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -963,18 +963,27 @@ nav {
 
   .about-us-details {
     position: relative;
-    text-align: center;
   }
 
-  .about-us-details > h2 {
-    color: #4682b4;
+  .about-us-header {
+    position: relative;
     font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .about-us-header::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    background-color: #4682b4;
   }
 
   .detail-item {
     display: flex;
     gap: 1rem;
-    justify-content: center;
   }
 
   .fa-check-circle {
@@ -984,7 +993,6 @@ nav {
   .mission-vision-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
 
   .mission-vision-container > h2 {
@@ -994,6 +1002,12 @@ nav {
 
   .mission-title,
   .vision-title {
+    font-weight: bold;
+  }
+
+  .fa-bullseye,
+  .fa-eye,
+  .fa-seedling {
     color: #4682b4;
   }
 
@@ -1009,6 +1023,12 @@ nav {
     object-fit: cover;
   }
 
+  .card-img-top {
+    max-height: 30%;
+    width: auto;
+    object-fit: cover; /* this property will ensure that the aspect ratio of the image is preserved */
+  }
+
   .manager-section {
     display: flex;
     flex-direction: column;
@@ -1016,7 +1036,7 @@ nav {
     text-align: center;
     max-width: 800px;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem 0;
     background-color: #f5f5f5;
     border-radius: 10px;
   }
