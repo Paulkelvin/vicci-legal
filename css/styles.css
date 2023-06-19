@@ -188,7 +188,7 @@ nav.blur {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("./assets/hero-image1.png");
+    url("VICCIGLOW/assets/hero-image1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -221,15 +221,9 @@ nav.blur {
 .hero-left > h1 {
   color: #fff;
   font-size: 2.5rem;
-  color: #333333;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
-
-/* h1 > .legal,
-.property {
-  color: #4682b4;
-} */
 
 .hero-left > p {
   color: #e0e0e0;
@@ -247,6 +241,10 @@ nav.blur {
   padding: 12px 18px;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
