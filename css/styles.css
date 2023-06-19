@@ -188,7 +188,7 @@ nav.blur {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("VICCIGLOW/assets/hero-image1.png");
+    url("../assets/hero-image1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
