@@ -72,3 +72,12 @@ window.addEventListener("click", function (event) {
     dropdownMenu.classList.remove("show");
   }
 });
+
+window.onscroll = function () {
+  var navbar = document.querySelector("nav");
+  if (window.pageYOffset > 100) {
+    navbar.classList.add("blur");
+  } else {
+    navbar.classList.remove("blur");
+  }
+};
