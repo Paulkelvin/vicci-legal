@@ -81,3 +81,25 @@ window.onscroll = function () {
     navbar.classList.remove("blur");
   }
 };
+
+function checkVisibility() {
+  $(".animation-slide-up").each(function () {
+    var position = $(this).offset().top;
+    var windowHeight = $(window).height();
+    var scroll = $(window).scrollTop();
+
+    if (scroll > position - windowHeight) {
+      $(this).addClass("animation-visible");
+    }
+  });
+}
+
+// Call checkVisibility when the document is ready
+$(document).ready(function () {
+  checkVisibility();
+});
+
+// Call checkVisibility when the window is scrolled
+$(window).scroll(function () {
+  checkVisibility();
+});
