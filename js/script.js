@@ -75,7 +75,7 @@ window.addEventListener("click", function (event) {
 
 window.onscroll = function () {
   var navbar = document.querySelector("nav");
-  if (window.pageYOffset > 100) {
+  if (window.scrollY > 100) {
     navbar.classList.add("blur");
   } else {
     navbar.classList.remove("blur");
@@ -90,6 +90,7 @@ function checkVisibility() {
 
     if (scroll > position - windowHeight) {
       $(this).addClass("animation-visible");
+      $(this).css("animation-delay", "0.5s");
     }
   });
 }

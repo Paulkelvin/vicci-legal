@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Vicci Glow</title>
   </head>
   <body>
@@ -49,14 +50,16 @@
       <div class="home-container">
         <div class="hero-section">
           <div class="hero-left">
-            <h1>Discover the Essence of Elegance with Vicci crystal</h1>
-            <p>
+            <h1 class="animation-slide-up">
+              Discover the Essence of Elegance with Vicci crystal
+            </h1>
+            <p class="animation-slide-up">
               Embark on an extraordinary journey with us, where exceptional
               services and unmatched satisfaction await. Discover the pinnacle
               of excellence.
             </p>
 
-            <div class="cta-button-container">
+            <div class="cta-button-container animation-slide-up">
               <a href="#legal" class="cta-button"
                 >Get in touch <i class="fas fa-rocket"></i
               ></a>
@@ -79,14 +82,14 @@
         <section class="bg-light m-0 pt-5 pb-3">
           <div class="container-fluid px-0 custom-container">
             <div class="text-center">
-              <h2 class="mb-5">Our Services</h2>
+              <h2 class="mb-5 animation-slide-up">Our Services</h2>
             </div>
           </div>
           <div
             class="row align-items-center justify-content-center no-padding mx-0"
           >
             <div class="col-9 col-lg-4 col-xl-3">
-              <div class="card border-0">
+              <div class="card border-0 animation-slide-left">
                 <div
                   class="card-body bg-light border-none py-4 text-center text-md-start text-lg-start"
                 >
@@ -105,7 +108,7 @@
               </div>
             </div>
             <div class="col-9 col-lg-4 col-xl-3 mb-4 mb-sm-4 mb-lg-0">
-              <div class="card shadow border-0">
+              <div class="card shadow border-0 animation-slide-up">
                 <div class="card-body text-center py-4">
                   <i
                     class="fas fa-briefcase fa-2x mb-4"
@@ -125,7 +128,7 @@
               </div>
             </div>
             <div class="col-9 col-lg-4 col-xl-3 mb-4 mb-sm-4 mb-lg-0">
-              <div class="card shadow border-0">
+              <div class="card shadow border-0 animation-slide-up">
                 <div class="card-body text-center py-4">
                   <i
                     class="fas fa-user-edit fa-2x mb-4"
@@ -151,7 +154,7 @@
             class="row my-0 my-md-5 align-items-center justify-content-center mx-0"
           >
             <div class="col-9 col-lg-4 col-xl-3 mb-4 mb-sm-4 mb-lg-0">
-              <div class="card shadow border-0">
+              <div class="card shadow border-0 animation-slide-up">
                 <div class="card-body text-center py-4">
                   <i
                     class="fas fa-shipping-fast fa-2x mb-4"
@@ -172,7 +175,7 @@
               </div>
             </div>
             <div class="col-9 col-lg-4 col-xl-3 mb-4 mb-sm-4 mb-lg-0">
-              <div class="card shadow mb-sm-3 border-0">
+              <div class="card shadow mb-sm-3 animation-slide-up border-0">
                 <div class="card-body text-center py-4">
                   <i
                     class="fas fa-tshirt fa-2x mb-4"
@@ -197,22 +200,22 @@
         </section>
         <section class="about-section">
           <div class="about-intro">
-            <h2 class="about-heading animation-slide-up">About Us</h2>
-            <p class="about-description">
+            <h2 class="about-heading">About Us</h2>
+            <p class="about-description animation-slide-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
               consectetur saepe quo voluptatibus molestias et illo praesentium.
               Earum, maxime maiores.
             </p>
           </div>
           <div class="about-detail">
-            <div class="image-container">
+            <div class="image-container animation-slide-up">
               <img
                 class="about-image"
                 src="assets/about-us-image.jpg"
                 alt="About Us Image"
               />
             </div>
-            <div class="detail-content">
+            <div class="detail-content animation-slide-up">
               <h3 class="detail-heading">Lorem, ipsum dolor.</h3>
               <p class="detail-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -228,7 +231,7 @@
             </div>
           </div>
         </section>
-        <section class="testimonial-section animation-slide-up">
+        <section class="testimonial-section">
           <h2 class="testimonial-heading">Testimonials</h2>
           <p class="testimonial-sub-heading">What our clients say</p>
           <div class="testimonial">
@@ -640,7 +643,6 @@
             </div>
             <div class="footer-links">
               <h3 class="footer-heading">SERVICES</h3>
-              <a href="" class="footer-link">Legal Consultancy</a>
               <a href="" class="footer-link">Property Managment</a>
               <a href="" class="footer-link">House Keeping</a>
             </div>
@@ -682,7 +684,47 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function checkVisibility() {
+        // For .animation-slide-up and .animation-slide-down
+        $(".animation-slide-up, .animation-slide-down").each(function () {
+          var position = $(this).offset().top;
+          var windowHeight = $(window).height();
+          var scroll = $(window).scrollTop();
+
+          if (
+            scroll < position &&
+            position < scroll + windowHeight &&
+            !$(this).hasClass("animation-visible")
+          ) {
+            $(this).addClass("animation-visible");
+            $(this).css("animation-delay", "0.5s");
+          }
+        });
+
+        // For .animation-slide-down elements already in viewport when page loads
+        $(".animation-slide-down").each(function () {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+
+          if (scroll > position && !$(this).hasClass("animation-visible")) {
+            $(this).addClass("animation-visible");
+            $(this).css("animation-delay", "0.5s");
+          }
+        });
+      }
+
+      // Call checkVisibility when the document is ready
+      $(document).ready(function () {
+        checkVisibility();
+      });
+
+      // Call checkVisibility when the window is scrolled
+      $(window).scroll(function () {
+        checkVisibility();
+      });
+    </script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
