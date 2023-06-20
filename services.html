@@ -41,20 +41,19 @@
     <section id="services" class="main-section">
       <div class="services-introduction">services</div>
       <section class="booking-section">
-        <div class="cleaning-card-container">
-        <div class="card shadow" style="width: 18rem;">
-          <img src="assets/cleaning_service.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, obcaecati ipsum tenetur quasi laborum architecto.</p>
-            <a href="#" class="btn btn-primary">Schedule Now</a>
-          </div>
+         <h2 class="booking-heading">Schedule your service</h2>
+         <div class="arrow-down-container">
+          <i class="fas fa-arrow-down arrow-down fa-2x"></i>
         </div>
-      </div>
+        <div class="service-image-container">
+        
+        <img src="assets/cleaning_service.png" class="service-image" alt="...">
+        </div>
       <div class="services-booking-form">
-          <h2>Schedule Your Housekeeping Service Now!</h2>
+          <!-- <h2>Schedule Your Housekeeping Service Now!</h2> -->
           <form>
               <div class="form-group">
-                  <label for="service" class="label-service">Service</label>
+                  <label for="service" class="label-service">Choose your service type</label>
                   <div class="input-icon">
                     <div class="input-icon-container">    <i class="fas fa-cogs"></i></div>
                       <select id="service" class="input-service">
@@ -65,31 +64,35 @@
                   </div>
               </div>
               <div class="form-group">
-                  <label for="work-area" class="label-work-area">Work Area</label>
+                  <label for="work-area" class="label-work-area">Property Type</label>
                   <div class="input-icon">
                     <div class="input-icon-container">  <i class="fas fa-map-marker-alt"></i></div>
-                      <input type="text" id="work-area" class="input-work-area">
+                      <input type="text" id="work-area" class="input-work-area"
+                      placeholder="Describe your propety type">
                   </div>
               </div>
               <div class="form-group">
                   <label for="name" class="label-name">Name</label>
                   <div class="input-icon">
                    <div class="input-icon-container"> <i class="fas fa-user"></i></div>  
-                      <input type="text" id="name" class="input-name">
+                      <input type="text" id="name" class="input-name"
+                      placeholder="Enter your Name">
                   </div>
               </div>
               <div class="form-group">
                   <label for="phone" class="label-phone">Phone Number</label>
                   <div class="input-icon">
                     <div class="input-icon-container">   <i class="fas fa-phone"></i></div>
-                      <input type="tel" id="phone" class="input-phone">
+                      <input type="tel" id="phone" class="input-phone"
+                      placeholder="Enter your phone number">
                   </div>
               </div>
               <div class="form-group">
                   <label for="email" class="label-email">Email Address</label>
                   <div class="input-icon">
                     <div class="input-icon-container">   <i class="fas fa-envelope"></i></div>
-                      <input type="email" id="email" class="input-email">
+                      <input type="email" id="email" class="input-email"
+                      placeholder="example@email.com">
                   </div>
               </div>
               <div class="form-group">
@@ -97,7 +100,8 @@
                   <label for="date" class="label-date">Date </label>
                   <div class="input-icon">
                     <div class="input-icon-container">   <i class="fas fa-clock"></i></div>
-                      <input type="date" id="date" class="input-date">
+                      <input type="date" id="date" class="input-date"
+                      >
                   </div>
                 </div>
                 <div class="time-container">
@@ -112,7 +116,8 @@
                   <label for="address" class="label-address">Address</label>
                   <div class="input-icon">
                     <div class="input-icon-container">  <i class="fas fa-home"></i></div>
-                      <input type="text" id="address" class="input-address">
+                      <input type="text" id="address" class="input-address"
+                      placeholder="4, Zik Avenue Ikeja, Abuja,">
                   </div>
               </div>
               <div class="form-group">
@@ -122,11 +127,59 @@
                       <textarea id="instructions" class="input-instructions"></textarea>
                   </div>
               </div>
-              <button type="submit" class="book-now-button">Book Now</button>
+            <button type="submit" class="book-now-button">Book Now</button>
           </form>
+
+
       </div>
-      
   </section>
+        <footer>
+          <div class="footer-container">
+            <div class="footer-logo-container">
+              <img src="assets/about-us-image.jpg" alt="" class="footer-logo" />
+            </div>
+            <div class="footer-links">
+              <h3 class="footer-heading">ABOUT VICCI SERVICES</h3>
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="contact.html" class="footer-link">Get in touch</a>
+              <a href="index.html#faq" class="footer-link">FAQ</a>
+            </div>
+            <div class="footer-links">
+              <h3 class="footer-heading">SERVICES</h3>
+              <a href="services.html" class="footer-link">Property Managment</a>
+              <a href="services.html" class="footer-link">House Keeping</a>
+            </div>
+            <div class="footer-links">
+              <h3 class="footer-heading">COMPANY</h3>
+              <a href="about.html" class="footer-link">About Us</a>
+              <a href="contact.html" class="footer-link">Contact Us</a>
+              <a href="index.html#faq" class="footer-link">FAQ</a>
+            </div>
+            <div class="footer-social-media">
+              <h3 class="footer-heading">
+                Stay up-to-date with us on social media!
+              </h3>
+              <div class="social-icons-container">
+                <div class="social-icon-container">
+                  <i class="fab fa-facebook-f social-icon"></i>
+                </div>
+                <div class="social-icon-container">
+                  <i class="fab fa-instagram social-icon"></i>
+                </div>
+
+                <div class="social-icon-container">
+                  <i class="fab fa-twitter social-icon"></i>
+                </div>
+                <div class="social-icon-container">
+                  <i class="fab fa-whatsapp social-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              © 2023, Victoria Samuel. All rights reserved.
+            </div>
+          </div>
+        </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
